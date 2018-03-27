@@ -6,7 +6,7 @@
 
 <h3>{{currentFocus}}</h3>
 <ul>
- <li [class]="levelColor(currentKeg)" *ngFor="let currentKeg of kegs">{{currentKeg.name}}{{currentKeg.brand}}{{currentKeg.alcoholContent}}{{currentKeg.price}}<button class="btn" (click)="editKeg(currentKeg)">Edit</button></li>
+ <li [class]="levelColor(currentKeg)" *ngFor="let currentKeg of kegs"><h4>{{currentKeg.name}}</h4><br><strong>Brand:</strong> {{currentKeg.brand}}<br> <strong>Alcohol Content:</strong> {{currentKeg.alcoholContent}}<br> <strong>Price:</strong> {{currentKeg.price}}<br><button class="btn" (click)="editKeg(currentKeg)">Edit</button></li>
 </ul>
 
 <div *ngIf="selectedKeg">
@@ -19,7 +19,7 @@
 <br>
 <input type="radio" [(ngModel)]="selectedKeg.level" [value]="1">1 (Low Priority)<br>
 <input type="radio" [(ngModel)]="selectedKeg.level" [value]="2">2 (Medium Priority)<br>
-<input type="radio" [(ngModel)]="selectedKeg.level" [value]="3">3 (High Priority)
+<input type="radio" [(ngModel)]="selectedKeg.level" [value]="3">3 (High Priority)<br>
 <button (click)="finishedEditing()">Done</button>
 </div>
 

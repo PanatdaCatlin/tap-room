@@ -15,8 +15,8 @@ export class AppComponent {
 
   kegs: Keg[] = [
     new Keg('Belgian White','Blue Moon', '$3.45', 6.7 ,3),
-    new Keg('Irish Death','Iron Horse Brewery', '$5.00', 3.4 ,3),
-    new Keg('ESB','Red Hook', '$4.45', 4.6 ,3)
+    new Keg('Irish Death','Iron Horse Brewery', '$5.00', 3.4 ,2),
+    new Keg('ESB','Red Hook', '$4.45', 4.6 ,1)
   ];
   selectedKeg= null;
 
